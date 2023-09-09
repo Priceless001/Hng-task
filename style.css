@@ -1,0 +1,62 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+background-color: black;
+}
+.container{
+    max-width: fit-content;
+    margin: 0 auto;
+    /* margin-left: 500px; */
+}
+img{
+    width: 500px;
+    height: 500px;
+    margin-top: 100px;
+    border-radius: 50%;
+    /* filter: grayscale(50%); */
+}
+div[data-testid="slackUserName"]{
+    font-size: 36px;
+    font-weight: 600;
+    color: cadetblue;
+    margin-top: 100px;
+}
+div[data-testid="slackDisplayImage"]{
+    display: flex;
+}
+p{
+    margin-top: 300px;
+    font-size: 36px;
+    font-weight: 600;
+    color: cadetblue;
+}
+.data{
+    display: flex;
+    gap: 40px;
+}
+div[data-testid="myTrack"]{
+    color: navy;
+    font-size: 35px;
+    font-weight: 400;
+}
+#day{
+    color: navy;
+    font-size: 35px;
+    font-weight: 400;
+}
+#time{
+    color: navy;
+    font-size: 35px;
+    font-weight: 400;
+}
+a{
+    color: navy;
+    font-size: 35px;
+    font-weight: 400;
+    text-decoration: none;
+    margin-left: 900px;
+    margin-top: 300px;
+}
