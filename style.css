@@ -18,10 +18,10 @@ img{
     border-radius: 50%;
     /* filter: grayscale(50%); */
 }
-div[data-testid="slackUserName"]{
+p[data-testid="slackUserName"]{
     font-size: 36px;
     font-weight: 600;
-    color: cadetblue;
+    /* color: cadetblue; */
     margin-top: 100px;
 }
 div[data-testid="slackDisplayImage"]{
@@ -37,7 +37,7 @@ p{
     display: flex;
     gap: 40px;
 }
-div[data-testid="myTrack"]{
+p[data-testid="myTrack"]{
     color: navy;
     font-size: 35px;
     font-weight: 400;
