@@ -15,7 +15,7 @@
         <div class="data-item" data-testid="slackDisplayImage">
             <!-- <p>Slack Display Picture</p> -->
             <img src="./slackDisplayImage.jpg" alt="Ayeni Precious">
-        </div
+        </div>
         <div class="data">
         <div class="data-item" data-testid="currentDayOfTheWeek">
            <span id="day"></span>
@@ -27,7 +27,7 @@
             <label>Track:</label>
             <span>Frontend</span>
         </div>
-        </div>
+      </div>
    </div>
    <footer>
     <div class="github-link" data-testid="githubURL">
@@ -36,25 +36,27 @@
    </footer>
    <script>
 
-    var currentDay =  document.getElementById("day")
-    currentDay.innerHTML= GetCurrentDay();
+     setInterval(()=>{
+        var currentDate =  document.getElementById("time");
+        
+       var show = new Date().getTime();
+       currentDate.innerHTML = show;
 
-    var currentDay =  document.getElementById("time")
-    currentDay.innerHTML= Date.now();
-        function GetDate(){
-            console.log
-        }
-       function GetCurrentDay(){
-        const currentDate = new Date()
-        const currentDayOfTheWeek = currentDate.getDay()
-        console.log (currentDayOfTheWeek)
-        const daysOfWeek = [
+     }, 1000)
+
+
+     let currentDay = document.getElementById('day')
+
+
+     const daysOfWeek = [
             "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"
         ];
-        const currentDayName = daysOfWeek[currentDayOfTheWeek];
-        console.log(currentDayName)
-        return currentDayName
-       }
+
+       const days = new Date().getDay()
+       console.log(days);
+      const show = daysOfWeek[days];
+      console.log(show);
+      currentDay.innerHTML = show
 
    </script>
 </body>
